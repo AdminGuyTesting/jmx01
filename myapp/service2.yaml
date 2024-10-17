@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: jmxapp01-8080
+    name: jmxapp01-1234
     labels:
         run: jmxapp01
 spec:
     type: NodePort
     ports:
-    - port: 8081
-      targetPort: 8080
+    - port: 1234
+      targetPort: 1234
       protocol: TCP
       name: http
     selector:

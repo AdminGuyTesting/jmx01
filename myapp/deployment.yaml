@@ -16,5 +16,6 @@ spec:
             - name: jmxapp01
               image: adminguytesting/jmx01:v0.1.0
               ports:
-                  - containerPort: 8080,1234
+                  - containerPort: 8080
+                  - containerPort: 1234
               imagePullPolicy: Always

@@ -11,12 +11,9 @@ spec:
       targetPort: 8080
       protocol: TCP
       name: http
-    selector:
-      run: jmxapp01
     - port: 1234
       targetPort: 1234
       protocol: TCP
       name: http
     selector:
       run: jmxapp01
-

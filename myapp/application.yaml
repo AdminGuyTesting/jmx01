@@ -9,6 +9,6 @@ spec:
     source:
         repoURL: https://github.com/AdminGuyTesting/jmx01.git
         targetRevision: HEAD
-        path: my-app
+        path: myapp
     destination:
         server: https://kubernetes.default.svc

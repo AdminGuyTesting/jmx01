@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: nginx
+    namespace: prodjmx01
+    labels:
+        app: jmxapp01
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app:jmxapp01
+    template:
+        metadata:
+            labels:
+                app: jmxapp01
+        spec:
+            containers:
+                - name: jmxapp01
+                  image: adminguytesting/jmx01:v0.1.0
+                  ports:
+                      - containerPort: 8080,1234

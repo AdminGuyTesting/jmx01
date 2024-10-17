@@ -1,0 +1,14 @@
+---
+apiVersion: argoproj.io/v1alpha1spec:
+kind: Application
+metadata:
+    name: jmxapp01
+    namespace: prodjmx01
+spec:
+    project: default
+    source:
+        repoURL: https://github.com/AdminGuyTesting/jmx01.git
+        targetRevision: HEAD
+        path: my-app
+    destination:
+        server: https://kubernetes.default.svc
